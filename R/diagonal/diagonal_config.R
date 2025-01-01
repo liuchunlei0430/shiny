@@ -1,0 +1,26 @@
+# Blues BuGn BuPu GnBu Greens Greys Oranges OrRd PuBu PuBuGn 
+# PuRd Purples RdPu Reds YlGn YlGnBu YlOrBr YlOrRd
+palettes <- list("overall" = "Reds",
+                 "batch.overall" = "Greens",
+                 "batch.metric" = "Greens",
+                 "clustering.overall" = "Blues",
+                 "clustering.metric" = "Blues",
+                 "classification.overall" = "PuRd",
+                 "classification.metric" = "PuRd",
+                 "classification_ori.overall" = "PuRd", #"RdPu",
+                 "classification_ori.metric" = "PuRd" #"RdPu"
+                 )
+
+text.metric <- c("method", "celltype")
+image.metric <- c("programmingLaguage", "DL", "Peak")
+overall.metric <- c("overall", "batch.overall", "clustering.overall", "classification.overall", "classification_ori.overall")
+
+clustering.metric <- c("ARI", "ASW", "cLISI", "iASW", "iFI", "NMI")
+classification.metric <- c("Average Accuracy", "Overall Accuracy", "f1_score", "sensitivity", "specificity")
+classification_ori.metric <- c("Average Accuracy_ori", "Overall Accuracy_ori", "f1_score_ori", "sensitivity_ori", "specificity_ori")
+batch.metric <- c("ASW_batch", "GC", "iLISI", "kBET", "NMI_batch", "ARI_batch")
+
+label_match <- data.frame(
+  label_new = c("Method", "Cell type", "Language", "DL", "Peak", "Overall score", "Clustering overall", "ARI", "ASW", "cLISI", "iFI", "iASW", "NMI", "Batch overall", "ASW", "GC", "iLISI", "kBET", 'NMI', "ARI", "Classification overall", "AAC", "OAC", "F1", "Sens", "Spec", "Seurat v3", "Seurat v5", "online iNMF"),
+  label_old = c("method", "celltype", "programmingLaguage", "DL", "Peak", "overall", "clustering.overall", "ARI", "ASW", "cLISI", "iFI", "iASW", "NMI", "batch.overall", "ASW_batch", "GC", "iLISI", "kBET", "NMI_batch", "ARI_batch", "classification.overall", "Average Accuracy", "Overall Accuracy", "f1_score", "sensitivity", "specificity", "Seurat.v3", "Seurat.v5", "online.iNMF"
+))
