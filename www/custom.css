@@ -1,0 +1,61 @@
+/* 统一修改 box 的背景色 */
+  
+/* 修改 box header（顶部栏）的背景色为统一颜色 */
+.box>.box-header {
+background-color: #2C3B41 !important;
+border-color: #2C3B41 !important;
+}
+
+/* 如果需要针对 solidHeader 的 box 进一步定制，可添加以下样式 */
+.box.solidHeader {
+background-color: #2C3B41 !important;
+border: none !important;
+}
+
+/* 如有 box-primary 类的box，也可统一修改 */
+.box.box-primary {
+border-top-color: #2C3B41 !important;
+}
+.box.box-primary>.box-header {
+background-color: #2C3B41 !important;
+}
+
+/* 修改标题文字、工具按钮等颜色，确保可读性 */
+.box>.box-header h3.box-title {
+color: #ffffff !important;
+}
+.box>.box-header .btn {
+color: #ffffff !important;
+}
+  
+/* 修改 valueBox 的背景色 */
+.small-box {
+    background-color: #2C3B41 !important;
+    border-color: #2C3B41 !important;
+  }
+  
+/* 修改 valueBox 标题及文字的颜色，保证可读性 */
+.small-box h3,
+.small-box p {
+color: #ffffff !important;
+}
+
+
+/* Box框线颜色 */
+.box {
+    border: 1px solid #2C3B41 !important;
+}
+
+/* 移除默认border和阴影 */
+.nav-tabs-custom .nav-tabs, 
+.nav-tabs-custom .nav-tabs > li.active > a,
+.nav-tabs-custom .nav-tabs > li.active > a:hover,
+.nav-tabs-custom .nav-tabs > li.active > a:focus {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* 针对活动状态的tab，强制设置上边框颜色和宽度 */
+.nav-tabs-custom .nav-tabs > li.active {
+    border-top: 3px solid #2C3B41 !important;
+}
