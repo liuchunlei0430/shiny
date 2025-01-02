@@ -1,0 +1,1184 @@
+Integration,dataset name,data source,protocol,modality,species,tissue,batch,original_feature_num,original_cell_num,original_cty_num,final_feature_num,final_cell_num,final_cty_num,,,, 
+Vertical integration,D1,1,CITE-seq,RNA+ADT,Human,PBMC,Cambridge Medical Centre,24737+192,30313,17,10652+192,26169,17,,,,
+Vertical integration,D2,1,CITE-seq,RNA+ADT,Human,PBMC,NCL Medical Centre,24737+192,64262,18,10604+192,56416,16,,,,
+Vertical integration,D3,2,CITE-seq,RNA+ADT,Human,PBMC,HD1_Adult,33538+189,8650,30,11020+189,7116,26,,,,
+Vertical integration,D4,2,CITE-seq,RNA+ADT,Human,PBMC,HD2_Adult,33538+189,9538,29,10758+189,7617,24,,,,
+Vertical integration,D5,2,CITE-seq,RNA+ADT,Human,PBMC,HD3_Adult,33538+189,10423,30,11003+189,8670,28,,,,
+Vertical integration,D6,3,CITE-seq,RNA+ADT,Human,PBMC,Batch1,33538+228,67090,31,11436+228,57767,31,,,,
+Vertical integration,D7,3,CITE-seq,RNA+ADT,Human,PBMC,Batch2,33538+228,94674,31,12325+228,82965,31,,,,
+Vertical integration,D8,5,CITE-seq,RNA+ADT,Human,BMMC,batch1,17009+25,14468,27,9786+25,12103,27,,,,
+Vertical integration,D9,5,CITE-seq,RNA+ADT,Human,BMMC,batch2,17009+25,16204,27,10000+25,13870,27,,,,
+Vertical integration,D10,6,CITE-seq,RNA+ADT,Human,PBMC&Lung,PBMC,33514+52,7108,11,6455+52,5981,11,,,,
+Vertical integration,D11,6,CITE-seq,RNA+ADT,Human,PBMC&Lung,Lung,33514+52,3362,14,9822+52,2864,13,,,,
+Vertical integration,D12,7,SHARE-seq,RNA+ATAC,Mouse,Skin,N/A,23296+344592,34774,23,8961+97669,28764,23,,,,
+Vertical integration,D13,8,SNARE-seq,RNA+ATAC,Mouse,Brain,AdBrainCortex,33160+244544,10309,23,10993+55704,8229,21,,,,
+Vertical integration,D14,8,SNARE-seq,RNA+ATAC,Mouse,Brain,P0_BrainCortex,19322+229429,5081,19,7503+42774,3793,19,,,,
+Vertical integration,D15,11,10x multiome,RNA+ATAC,Human,PBMC,N/A,36601+108344,11787,13,13436+79206,10717,13,,,,
+Vertical integration,D16,12,10x multiome,RNA+ATAC,Human,Neocortex,Adol1,30201+304034,3188,14,14962+142858,2896,9,,,,
+Vertical integration,D17,12,10x multiome,RNA+ATAC,Human,Neocortex,Adult1,30201+304034,1541,11,13434+107519,1403,4,,,,
+Vertical integration,D18,12,10x multiome,RNA+ATAC,Human,Neocortex,Child1,30201+304034,5418,13,15710+97842,5036,11,,,,
+Vertical integration,D19,12,10x multiome,RNA+ATAC,Human,Neocortex,EaFet1,30201+304034,2801,12,14064+42514,2506,5,,,,
+Vertical integration,D20,12,10x multiome,RNA+ATAC,Human,Neocortex,Inf1,30201+304034,2723,14,16217+117015,2362,7,,,,
+Vertical integration,D21,12,10x multiome,RNA+ATAC,Human,Neocortex,LaFet1,30201+304034,3102,12,14622+134336,2926,5,,,,
+Vertical integration,D22,14,DOGMA-seq,RNA+ADT+ATAC,Human,PBMC,Control,36495+210+68963,7624,26,12408+210+50857,6408,18,,,,
+Vertical integration,D23,14,DOGMA-seq,RNA+ADT+ATAC,Human,PBMC,Stim,36495+210+68963,6139,27,12773+210+57787,4606,16,,,,
+Vertical integration,SD1,N/A,Simulation,RNA+ADT,N/A,N/A,N/A,5000+200,3000,3,5000+200,3000,3,,,,
+Vertical integration,SD2,N/A,Simulation,RNA+ADT,N/A,N/A,N/A,3000+200,5000,5,3000+200,5000,5,,,,
+Vertical integration,SD3,N/A,Simulation,RNA+ATAC,N/A,N/A,N/A,2000+3000,3000,3,2000+3000,3000,3,,,,
+Vertical integration,SD4,N/A,Simulation,RNA+ATAC,N/A,N/A,N/A,1000+2000,5000,5,1000+2000,5000,5,,,,
+Vertical integration,SD5,N/A,Simulation,RNA+ADT+ATAC,N/A,N/A,N/A,2000+200+3000,3000,3,2000+200+3000,3000,3,,,,
+Vertical integration,SD6,N/A,Simulation,RNA+ADT+ATAC,N/A,N/A,N/A,1000+200+2000,5000,5,1000+200+2000,5000,5,,,,
+Diagonal integration,D24,7,"batch1: SHARE-seq
+batch2: SHARE-seq","batch1: RNA
+batch2: ATAC",Mouse,Skin,"batch1: All
+batch2: All","batch1: 23296
+batch2: 344592","batch1: 34774
+batch2: 34774","batch1: 23
+batch2: 23","batch1: 5414
+batch2: 97669","batch1: 28764
+batch2: 28764","batch1: 23
+batch2: 23",,,,
+Diagonal integration,D25,8,"batch1: SNARE-seq
+batch2: SNARE-seq","batch1: RNA
+batch2: ATAC",Mouse,Brain,"batch1: AdBrainCortex 
+batch2: AdBrainCortex","batch1: 33160
+batch2: 244544","batch1: 10309
+batch2: 10309","batch1: 23
+batch2: 23","batch1: 9812
+batch2: 55704","batch1: 8231
+batch2: 8231","batch1: 21
+batch2: 21",,,,
+Diagonal integration,D26,8,"batch1: SNARE-seq
+batch2: SNARE-seq","batch1: RNA
+batch2: ATAC",Mouse,Brain,"batch1: P0_BrainCortex
+batch2: P0_BrainCortex","batch1: 19322
+batch2: 229429","batch1: 5081
+batch2: 5081","batch1: 19
+batch2: 19","batch1: 4157
+batch2: 42774","batch1: 3796
+batch2: 3796","batch1: 19
+batch2: 19",,,,
+Diagonal integration,D27,11,"batch1: 10x multiome
+batch2: 10x multiome","batch1: RNA
+batch2: ATAC",Human,PBMC,"batch1: All 
+batch2: All","batch1: 36601
+batch2: 108344","batch1: 11787
+batch2: 11787","batch1: 13
+batch2: 13","batch1: 10827
+batch2: 79206","batch1: 10717
+batch2: 10717","batch1: 13
+batch2: 13",,,,
+Diagonal integration,D28,14,"batch1: DOGMA-seq
+batch2: DOGMA-seq","batch1: RNA
+batch2: ATAC",Human,PBMC,"batch1: Control
+batch2: Stim","batch1: 36495
+batch2: 68963","batch1: 7624
+batch2: 6139","batch1: 26
+batch2: 27","batch1: 10272
+batch2: 57787","batch1: 6408
+batch2: 4606","batch1: 18
+batch2: 16",,,,
+Diagonal integration,D29,15,"batch1: TEA-seq
+batch2: TEA-seq","batch1: RNA
+batch2: ATAC",Human,PBMC,"batch1: batch 1
+batch2: batch 2","batch1: 36601
+batch2: 94986","batch1: 6314
+batch2: 6548","batch1: 13
+batch2: 12","batch1: 8349
+batch2: 39703","batch1: 5362
+batch2: 5386","batch1: 11
+batch2: 10",,,,
+Diagonal integration,D30,"11, 14","batch1: 10x multiome
+batch2: DOGMA-seq","batch1: RNA
+batch2: ATAC",Human,PBMC,"batch1: All
+batch2: Control","batch1: 36601
+batch2: 68963","batch1: 11787
+batch2: 6139","batch1: 13
+batch2: 26","batch1: 9815
+batch2: 50734","batch1: 10719
+batch2: 6408","batch1: 13
+batch2: 18",,,,
+Diagonal integration,D31,"14, 15","batch1: DOGMA-seq
+batch2: TEAseq","batch1: RNA
+batch2: ATAC",Human,PBMC,"batch1: Control
+batch2: batch1","batch1: 36495
+batch2: 99658","batch1: 7624
+batch2: 6314","batch1: 26
+batch2: 13","batch1: 10202
+batch2: 39732","batch1: 6408
+batch2: 5235","batch1: 18
+batch2: 10",,,,
+Diagonal integration,D32,21,"batch1: Spatial ATAC-RNA seq
+batch2: Spatial ATAC-RNA seq","batch1: RNA
+batch2: ATAC",Mouse,E13,"batch1:All
+batch2:All","batch1: 17058
+batch2: 32437","batch1:2187
+batch2:2187","batch1:14
+batch2:14","batch1: 11218
+batch2: 31840","batch1: 1676
+batch2: 1676","batch1:14
+batch2:14",,,,
+Diagonal integration,D33,21,"batch1: Spatial ATAC-RNA seq
+batch2: Spatial ATAC-RNA seq","batch1: RNA
+batch2: ATAC",Mouse,P22 brain,"batch1:All
+batch2:All","batch1: 22914
+batch2: 121068","batch1:9215
+batch2:9215","batch1:11
+batch2:11","batch1: 10092
+batch2: 111210","batch1: 6786
+batch2: 6786","batch1:11
+batch2:11",,,,
+Diagonal integration,D34,9,batch1-26: 10x multiome,"batch1-13: RNA
+batch14-26: ATAC",Human,BMMC,"batch1-13: batches 1-13
+batch14-26: batches 1-13","batch1-13: 13431  
+batch2-26: 116490","batch1,14: 6224  
+batch2,15: 6740
+batch3,16: 4279
+batch4,17: 4220
+batch5,18: 6111
+batch6,19: 4895
+batch7,20: 6781
+batch8,21: 4325
+batch9,22: 1679
+batch10,23: 1771
+batch11,24: 8023
+batch12,25: 9876
+batch13,26: 4325","batch1,14: 21
+batch2,15: 21
+batch3,16: 19
+batch4,17: 20
+batch5,18: 17
+batch6,19: 16
+batch7,20: 21
+batch8,21: 20
+batch9,22: 18
+batch10,23: 18
+batch11,24: 19
+batch12,25: 19
+batch13,26: 18","batch1-13: 7745  
+batch2-26: 32491","batch1,14: 5536  
+batch2,15: 5903
+batch3,16: 3821
+batch4,17: 3868
+batch5,18: 5592
+batch6,19: 4522
+batch7,20: 6071
+batch8,21: 3749
+batch9,22: 1532
+batch10,23: 1560
+batch11,24: 6937
+batch12,25: 8845
+batch13,26: 3654","batch1,14: 21
+batch2,15: 21
+batch3,16: 19
+batch4,17: 20
+batch5,18: 17
+batch6,19: 16
+batch7,20: 20
+batch8,21: 20
+batch9,22: 18
+batch10,23: 16
+batch11,24: 19
+batch12,25: 19
+batch13,26: 18",,,,
+Diagonal integration,D35,10,batch1-18: 10x multiome,"batch1-9: RNA
+batch10-18: ATAC",Mouse,Embryo,"batch1: GSM6205416
+batch2: GSM6205417
+batch3: GSM6205418
+batch4: GSM6205419
+batch5: GSM6205420
+batch6: GSM6205423
+batch7: GSM6205424
+batch8: GSM6205425
+batch9: GSM6205426
+batch10: GSM6205416
+batch11: GSM6205417
+batch12: GSM6205418
+batch13: GSM6205419
+batch14: GSM6205420
+batch15: GSM6205423
+batch16: GSM6205424
+batch17: GSM6205425
+batch18: GSM6205426","batch1: 32285
+batch2: 32285
+batch3: 32285
+batch4: 32285
+batch5: 32285
+batch6: 32285
+batch7: 32285
+batch8: 32285
+batch9: 32285
+batch10: 162669
+batch11: 156487
+batch12: 172779
+batch13: 169478
+batch14: 159345
+batch15: 185545
+batch16: 186494
+batch17: 157105
+batch18: 170504","batch1: 8343
+batch2: 10968
+batch3: 3977
+batch4: 6301
+batch5: 5467
+batch6: 9584
+batch7: 7360
+batch8: 3822
+batch9: 5204
+batch10: 8343
+batch11: 10968
+batch12: 3977
+batch13: 6301
+batch14: 5467
+batch15: 9584
+batch16: 7360
+batch17: 3822
+batch18: 5204","batch1: 32
+batch2: 34
+batch3: 24
+batch4: 31
+batch5: 31
+batch6: 31
+batch7: 34
+batch8: 26
+batch9: 32
+batch10: 32
+batch11: 34
+batch12: 24
+batch13: 31
+batch14: 31
+batch15: 31
+batch16: 34
+batch17: 26
+batch18: 32","batch1-9: 11641
+batch10-18: 113345","batch1,10: 6957
+batch2,11: 8747
+batch3,12: 2672
+batch4,13: 5366 
+batch5,14: 4667
+batch6,15: 8192
+batch7,16: 6232
+batch8,17: 3372 
+batch9,18: 4548","batch1,10: 25
+batch2,11: 25
+batch3,12: 14
+batch4,13: 27
+batch5,14: 27
+batch6,15: 25
+batch7,16: 26
+batch8,17: 19
+batch9,18: 22",,,,
+Diagonal integration,D36,14,batch1-4: DOGMA-seq,"batch1-2: RNA
+batch3-4: ATAC",Human,PBMC,"batch1: Control
+batch2: Stim
+batch3: Control
+batch4: Stim","batch1: 36495
+batch2: 36495
+batch3: 68963
+batch4: 68963","batch1: 7624
+batch2: 6139
+batch3: 7624
+batch4: 6139","batch1: 26
+batch2: 27
+batch3: 26
+batch4: 27","batch1: 10143
+batch2: 10143
+batch3: 49837
+batch4: 49837","batch1: 6404
+batch2: 4617
+batch3: 6404
+batch4: 4617","batch1: 18
+batch2: 16
+batch3: 18
+batch4: 16",,,,
+Diagonal integration,D37,15,batch1-6: TEA-seq,"batch1-3: RNA
+batch4-6: ATAC",Human,PBMC,"batch1: batch1
+batch2: batch2
+batch3: batch3
+batch4: batch1
+batch5: batch2
+batch6: batch3","batch1: 36601
+batch2: 36601
+batch3: 36601
+batch4: 99658
+batch5: 94986
+batch6: 83234","batch1: 6314
+batch2: 6548
+batch3: 6547
+batch4: 6314
+batch5: 6548
+batch6: 6547","batch1: 13
+batch2: 12
+batch3: 13
+batch4: 13
+batch5: 12
+batch6: 13","batch1: 8359
+batch2: 8359
+batch3: 8359
+batch4: 39732
+batch5: 39732
+batch6: 39732","batch1: 5235
+batch2: 5386
+batch3: 5445
+batch4: 5235
+batch5: 5386
+batch6: 5445","batch1: 10
+batch2: 10
+batch3: 9
+batch4: 10
+batch5: 10
+batch6: 9",,,,
+Diagonal integration,SD7,N/A,Simulation,RNA+ATAC,N/A,N/A,N/A,"batch1: 2000
+batch2: 3000","batch1: 3000
+batch2: 3000","batch1: 3
+batch2: 3","batch1: 2000
+batch2: 3000","batch1: 3000
+batch2: 3000","batch1: 3
+batch2: 3",,,,
+Diagonal integration,SD8,N/A,Simulation,RNA+ATAC,N/A,N/A,N/A,"batch1: 1000
+batch2: 2000","batch1: 5000
+batch2: 5000","batch1: 5
+batch2: 5","batch1: 1000
+batch2: 2000","batch1: 5000
+batch2: 5000","batch1: 5
+batch2: 5",,,,
+Diagonal integration,SD9,N/A,Simulation,"batch1-2: RNA
+batch3-4: ATAC",N/A,N/A,N/A,"batch1: 2000
+batch2: 2000
+batch3: 3000
+batch4: 3000","batch1: 2003 
+batch2: 1997
+batch3: 2003 
+batch4: 1997","batch1: 3
+batch2: 3
+batch3: 3
+batch4: 3","batch1: 2000
+batch2: 2000
+batch3: 3000
+batch4: 3000","batch1: 2003 
+batch2: 1997
+batch3: 2003 
+batch4: 1997","batch1: 3
+batch2: 3
+batch3: 3
+batch4: 3",,,,
+Diagonal integration,SD10,N/A,Simulation,"batch1-2: RNA
+batch3-4: ATAC",N/A,N/A,N/A,"batch1: 2000
+batch2: 2000
+batch3: 5000
+batch4: 5000","batch1: 2514
+batch2: 2486
+batch3: 2514
+batch4: 2486","batch1: 5
+batch2: 5
+batch3: 5
+batch4: 5","batch1: 2000
+batch2: 2000
+batch3: 5000
+batch4: 5000","batch1: 2514
+batch2: 2486
+batch3: 2514
+batch4: 2486","batch1: 5
+batch2: 5
+batch3: 5
+batch4: 5",,,,
+Mosaic integration,D38,1,CITE-seq,"batch1: RNA
+batch2: RNA+ADT
+batch3: ADT",Human,PBMC,"batch1: Cambridge Medical Centre
+batch2: NCL Medical Centre
+batch3: Cambridge Medical Centre","batch1: 24737
+batch2: 24737+192
+batch3: 192","batch1: 30313
+batch2: 64262
+batch3: 30313","batch1: 17
+batch2: 18
+batch3: 17","batch1: 10232
+batch2: 10232+192
+batch3: 192","batch1: 26045
+batch2: 56215
+batch3: 26045","batch1: 17
+batch2: 16
+batch3: 17",,,,
+Mosaic integration,D39,2,CITE-seq,"batch1: RNA 
+batch2: RNA+ADT
+batch3: ADT",Human,PBMC,"batch1: HD1_Adult
+batch2: HD2_Adult
+batch3: HD3_Adult","batch1: 33538
+batch2: 33538+189
+batch3: 189","batch1: 8650
+batch2: 9538
+batch3: 10423","batch1: 30
+batch2: 29
+batch3: 30","batch1: 10475
+batch2: 10475+189
+batch3: 189","batch1: 7113
+batch2: 7651
+batch3: 8714","batch1: 26
+batch2: 24
+batch3: 28",,,,
+Mosaic integration,D40,3,CITE-seq,"batch1: RNA 
+batch2: RNA+ADT
+batch3: ADT",Human,PBMC,"batch1: Batch1
+batch2: Batch2
+batch3: Batch1","batch1: 33538
+batch2: 33538+228
+batch3: 228","batch1: 67090
+batch2: 94674
+batch3: 67090","batch1: 31
+batch2: 31
+batch3: 31","batch1: 11394
+batch2: 11394+228
+batch3: 228","batch1: 57803
+batch2: 83148
+batch3: 57803","batch1: 31
+batch2: 31
+batch3: 31",,,,
+Mosaic integration,D41,5,CITE-seq,"batch1: RNA 
+batch2: RNA+ADT
+batch3: ADT",Human,BMNC,"batch1: batch1
+batch2: batch2
+batch3: batch1","batch1: 17009
+batch2: 17009+25
+batch3: 25","batch1: 14468
+batch2: 16204
+batch3: 14468","batch1: 27
+batch2: 27
+batch3: 27","batch1: 9702
+batch2: 9702+25
+batch3: 25","batch1: 12101
+batch2: 13912
+batch3: 12101","batch1: 27
+batch2: 27
+batch3: 27",,,,
+Mosaic integration,D42,7,SHAREseq,"batch1: RNA 
+batch2: RNA+ATAC
+batch3: ATAC",Human,BMNC,"batch1: ALL
+batch2: ALL
+batch3: ALL","batch1: 23296
+batch2: 23296+344592
+batch3: 344592","batch1: 34774
+batch2: 34774
+batch3: 34774","batch1: 23
+batch2: 23
+batch3: 23","batch1: 8961
+batch2: 8961+97669
+batch3: 97669","batch1: 28764
+batch2: 28764
+batch3: 28764","batch1: 23
+batch2: 23
+batch3: 23",,,,
+Mosaic integration,D43,8,SNARE-seq,"batch1: RNA 
+batch2: RNA+ATAC
+batch3: ATAC",Mouse,Brain,"batch1: AdBrainCortex
+batch2: AdBrainCortex
+batch3: AdBrainCortex","batch1: 33160
+batch2: 33160+244544
+batch3: 244544","batch1: 10309
+batch2: 10309
+batch3: 10309","batch1: 23
+batch2: 23
+batch3: 23","batch1: 10993
+batch2: 10993+55704
+batch3: 55704","batch1: 8229
+batch2: 8229
+batch3: 8229","batch1: 21
+batch2: 21
+batch3: 21",,,,
+Mosaic integration,D44,8,SNARE-seq,"batch1: RNA 
+batch2: RNA+ATAC
+batch3: ATAC",Mouse,Brain,"batch1: P0_BrainCortex
+batch2: P0_BrainCortex
+batch3: P0_BrainCortex","batch1: 19322  
+batch2: 19322+229429
+batch3: 229429","batch1: 5081
+batch2: 5081
+batch3: 5081","batch1: 19
+batch2: 19
+batch3: 19","batch1: 7503  
+batch2: 7503+42774
+batch3: 42774","batch1: 3793
+batch2: 3793
+batch3: 3793","batch1: 19
+batch2: 19
+batch3: 19",,,,
+Mosaic integration,D45,11,10x multiome,"batch1: RNA 
+batch2: RNA+ATAC
+batch3: ATAC",Human,PBMC,"batch1: ALL
+batch2: ALL
+batch3: ALL","batch1: 36601
+batch2: 36601+108344
+batch3: 108344","batch1: 11787
+batch2: 11787
+batch3: 11787","batch1: 13
+batch2: 13
+batch3: 13","batch1: 13436
+batch2: 13436+79206
+batch3: 79206","batch1: 10717
+batch2: 10717
+batch3: 10717","batch1: 13
+batch2: 13
+batch3: 13",,,,
+Mosaic integration,D46,"4,9","10x multiome
+CITE-seq","batch1: RNA+ADT
+batch2: RNA+ATAC
+batch3: RNA",Human,BMMC,"batch1: batch4 of souce 4
+batch2: batch12 of souce 9
+batch3: batch1 of source 4","batch1: 13953 +134
+batch2: 13431+116490
+batch3: 13953","batch1: 10465
+batch2: 9876
+batch3: 5227","batch1: 38
+batch2: 19
+batch3: 37","batch1: 8949 +134
+batch2: 8949+61743
+batch3: 8949","batch1: 8404
+batch2: 8845
+batch3: 4167","batch1: 33
+batch2: 19
+batch3: 32",,,,
+Mosaic integration,D47,"4,9","10x multiome
+CITE-seq","batch1: RNA+ADT
+batch2: RNA+ATAC
+batch3: RNA",Human,BMMC,"batch1: batch9 of souce 4
+batch2: batch11 of souce 9
+batch3: batch8 of source 4","batch1: 13953+134
+batch2: 13431+116490
+batch3: 13953","batch1: 11473
+batch2: 8023
+batch3: 11035","batch1: 34
+batch2: 19
+batch3: 36","batch1: 8861+134
+batch2: 8861+80779
+batch3: 8861","batch1: 10312
+batch2: 6935
+batch3: 8563","batch1: 31
+batch2: 19
+batch3: 36",,,,
+Mosaic integration,D48,"4,9","10x multiome
+CITE-seq","batch1: RNA+ADT
+batch2: RNA+ATAC
+batch3: ATAC",Human,BMMC,"batch1: batch7 of source 4
+batch2: batch6 of source 9
+batch3: batch12 of source 9","batch1: 13953+134
+batch2: 13431+116490
+batch3: 116490","batch1: 9521
+batch2: 4895
+batch3: 9876","batch1: 37
+batch2: 16
+batch3: 19","batch1: 8358+134
+batch2: 8358+45184
+batch3: 45184","batch1: 7786
+batch2: 4522
+batch3: 8845","batch1: 33
+batch2: 16
+batch3: 19",,,,
+Mosaic integration,D49,"4,9","10x multiome
+CITE-seq","batch1: RNA+ADT
+batch2: RNA+ATAC
+batch3: ADT",Human,BMMC,"batch1: batch2 of source 4
+batch2: batch8 of source 9
+batch3: batch1 of source 4","batch1: 13953+134
+batch2: 13431+116490
+batch3: 134","batch1: 4978
+batch2: 4325
+batch3: 5227","batch1: 41
+batch2: 20
+batch3: 37","batch1: 10533+134
+batch2: 10533+94099
+batch3: 134","batch1: 3919
+batch2: 3749
+batch3: 4167","batch1: 33
+batch2: 20
+batch3: 32",,,,
+Mosaic integration,D50,"4,9","10x multiome
+CITE-seq","batch1: RNA+ADT
+batch2: RNA+ATAC
+batch3: RNA
+batch4: ADT
+batch5: ATAC",Human,BMMC,"batch1: batch4 of souce 4
+batch2: batch12 of souce 9
+batch3: batch9 of source 4
+batch4: batch8 of source 4
+batch5: batch11 of source 9","batch1: 13953+134
+batch2: 13431+116490
+batch3: 13953
+batch4: 134
+batch5: 116490","batch1: 10465
+batch2: 9876
+batch3: 11473
+batch4: 11035
+batch5: 8023","batch1: 38
+batch2: 19
+batch3: 34
+batch4: 36
+batch5: 19","batch1: 8792+134
+batch2: 8792+59770
+batch3: 8792
+batch4: 134
+batch5: 59770","batch1: 8404
+batch2: 8845
+batch3: 10312
+batch4: 8563
+batch5: 6935","batch1: 33
+batch2: 19
+batch3: 31
+batch4: 36
+batch5: 19",,,,
+Mosaic integration,SD11,N/A,Simulation,"batch1: RNA 
+batch2: RNA+ADT
+batch3: ADT",N/A,N/A,N/A,"batch1: 5000 
+batch2: 5000+200
+batch3: 200","batch1: 3000 
+batch2: 3000
+batch3: 3000","batch1: 3
+batch2: 3
+batch3: 3","batch1: 5000 
+batch2: 5000+200
+batch3: 200","batch1: 3000 
+batch2: 3000
+batch3: 3000","batch1: 3
+batch2: 3
+batch3: 3",,,,
+Mosaic integration,SD12,N/A,Simulation,"batch1: RNA 
+batch2: RNA+ADT
+batch3: ADT",N/A,N/A,N/A,"batch1: 3000 
+batch2: 3000+200
+batch3: 200","batch1: 5000
+batch2: 5000
+batch3: 5000","batch1: 5
+batch2: 5
+batch3: 5","batch1: 3000 
+batch2: 3000+200
+batch3: 200","batch1: 5000
+batch2: 5000
+batch3: 5000","batch1: 5
+batch2: 5
+batch3: 5",,,,
+Mosaic integration,SD13,N/A,Simulation,"batch1: RNA 
+batch2: RNA+ATAC
+batch3: ATAC",N/A,N/A,N/A,"batch1: 2000 
+batch2: 2000+3000
+batch3: 3000","batch1: 3000 
+batch2: 3000
+batch3: 3000","batch1: 3
+batch2: 3
+batch3: 3","batch1: 2000 
+batch2: 2000+3000
+batch3: 3000","batch1: 3000 
+batch2: 3000
+batch3: 3000","batch1: 3
+batch2: 3
+batch3: 3",,,,
+Mosaic integration,SD14,N/A,Simulation,"batch1: RNA 
+batch2: RNA+ATAC
+batch3: ATAC",N/A,N/A,N/A,"batch1: 1000 
+batch2: 1000+2000
+batch3: 2000","batch1: 5000
+batch2: 5000
+batch3: 5000","batch1: 5
+batch2: 5
+batch3: 5","batch1: 1000 
+batch2: 1000+2000
+batch3: 2000","batch1: 5000
+batch2: 5000
+batch3: 5000","batch1: 5
+batch2: 5
+batch3: 5",,,,
+Cross integration,D51,1,CITE-seq,each batch is RNA+ADT,Human,PBMC,All 2 batches,"batch1: 24737+192
+batch2: 24737+192","batch1: 30313
+batch2: 64262","batch1: 17
+batch2: 18",each batch is 10232+192,"batch1: 26045
+batch2: 56215","batch1: 17
+batch2: 16",,,,
+Cross integration,D52,2,CITE-seq,each batch is RNA+ADT,Human,PBMC,All 3 batches,"batch1: 33538+189
+batch2: 33538+189
+batch3: 33538+189","batch1: 8650
+batch2: 9538
+batch3: 10423","batch1: 30
+batch2: 29
+batch3: 30",each batch is 10475+189,"batch1: 7113
+batch2: 7651
+batch3: 8714","batch1: 26
+batch2: 24
+batch3: 28",,,,
+Cross integration,D53,3,CITE-seq,each batch is RNA+ADT,Human,PBMC,All 2 batches,"batch1: 33538+228
+batch2: 33538+228","batch1: 67090
+batch2: 94674","batch1: 31
+batch2: 31",each batch is 11394+228,"batch1: 57803
+batch2: 83148","batch1: 31
+batch2: 31",,,,
+Cross integration,D54,4,CITE-seq,each batch is RNA+ADT,Human,BMMC,All 12 batches,"batch1: 13953+134
+batch2: 13953+134
+batch3: 13953+134
+batch4: 13953+134
+batch5: 13953+134
+batch6: 13953+134
+batch7: 13953+134
+batch8: 13953+134
+batch9: 13953+134
+batch10: 13953+134
+batch11: 13953+134
+batch12: 13953+134","batch1: 5227
+batch2: 4978
+batch3: 6106
+batch4: 10465
+batch5: 5584
+batch6: 9122
+batch7: 9521
+batch8: 11035
+batch9: 11473
+batch10: 5456
+batch11: 3929
+batch12: 7365","batch1: 37
+batch2: 41
+batch3: 36
+batch4: 38
+batch5: 30
+batch6: 34
+batch7: 37
+batch8: 36
+batch9: 34
+batch10: 39
+batch11: 33
+batch12: 36",each batch is 8502+134,"batch1: 4167
+batch2: 3919
+batch3: 5075
+batch4: 8395
+batch5: 4898
+batch6: 7203
+batch7: 7762
+batch8: 8584
+batch9: 10282
+batch10: 4227
+batch11: 3078
+batch12: 5690","batch1: 32
+batch2: 33
+batch3: 32
+batch4: 34
+batch5: 25
+batch6: 25
+batch7: 33
+batch8: 36
+batch9: 31
+batch10: 35
+batch11: 29
+batch12: 35",,,,
+Cross integration,D55,5,CITE-seq,each batch is RNA+ADT,Human,BMMC,All 2 batches,"batch1: 17009+25
+batch2: 17009+25","batch1: 14468
+batch2: 16204","batch1: 27
+batch2: 27",each batch is 9702+25,"batch1: 12101
+batch2: 13912","batch1: 27
+batch2: 27",,,,
+Cross integration,D56,9,10x multiome,each batch is RNA+ATAC,Human,BMMC,All 13 batches,"batch1: 13431+116490
+batch2: 13431+116490
+batch3: 13431+116490
+batch4: 13431+116490
+batch5: 13431+116490
+batch6: 13431+116490
+batch7: 13431+116490
+batch8: 13431+116490
+batch9: 13431+116490
+batch10: 13431+116490
+batch11: 13431+116490
+batch12: 13431+116490
+batch13: 13431+116490","batch1: 6224
+batch2: 6740
+batch3: 4279
+batch4: 4220
+batch5: 6111
+batch6: 4895
+batch7: 6781
+batch8: 4325
+batch9: 1679
+batch10: 1771
+batch11: 8023
+batch12: 9876
+batch13: 4325","batch1: 21
+batch2: 21
+batch3: 19
+batch4: 20
+batch5: 17
+batch6: 16
+batch7: 21
+batch8: 20
+batch9: 18
+batch10: 18
+batch11: 19
+batch12: 19
+batch13: 18",each batch is 8593+32491,"batch1: 5536
+batch2: 5903
+batch3: 3821
+batch4: 3868
+batch5: 5592
+batch6: 4522
+batch7: 6071
+batch8: 3749
+batch9: 1532
+batch10: 1560
+batch11: 6937
+batch12: 8845
+batch13: 3654","batch1: 21
+batch2: 21 
+batch3: 19
+batch4: 20
+batch5: 17
+batch6: 16
+batch7: 20
+batch8: 20
+batch9: 18
+batch10: 16
+batch11: 19
+batch12: 19
+batch13: 18",,,,
+Cross integration,D57,10,10x multiome,each batch is RNA+ATAC,Mouse,Embryo,All 9 batches,"batch1: 32285+162669
+batch2: 32285+156487
+batch3: 32285+172779
+batch4: 32285+169478
+batch5: 32285+159345
+batch6: 32285+185545
+batch7: 32285+186494
+batch8: 32285+157105
+batch9: 32285+170504","batch1: 8343
+batch2: 10968
+batch3: 3977
+batch4: 6301
+batch5: 5467
+batch6: 9584
+batch7: 7360
+batch8: 3822
+batch9: 5204","batch1: 32
+batch2: 34
+batch3: 24
+batch4: 31
+batch5: 31
+batch6: 31
+batch7: 34
+batch8: 26
+batch9: 32",each batch is 13225+113345,"batch1: 6957
+batch2: 8747
+batch3: 2672
+batch4: 5366
+batch5: 4667
+batch6: 8192
+batch7: 6232
+batch8: 3372
+batch9: 4548","batch1: 25
+batch2: 25
+batch3: 14
+batch4: 27
+batch5: 27
+batch6: 25
+batch7: 26
+batch8: 19
+batch9: 22",,,,
+Cross integration,D58,13,ASAP-seq,each batch is ADT+ATAC,Human,PBMC,All 2 batches,"batch1: 21994+227
+batch2: 26808+227","batch1: 3517
+batch2: 4849","batch1: 4
+batch2: 4",each batch is 21344+227,"batch1: 3249
+batch2: 4450","batch1: 4
+batch2: 4",,,,
+Cross integration,D59,14,DOGMA-seq,each batch is RNA+ADT+ATAC,Human,PBMC,All 2 batches,"batch1: 36495+210+68963
+batch2: 36495+210+68963","batch1: 7624
+batch2: 6139","batch1: 26
+batch2: 27",each batch is 12148+210+49837,"batch1: 6404
+batch2: 4617","batch1: 18
+batch2: 16",,,,
+Cross integration,SD15,N/A,Simulation,each batch is RNA+ADT,N/A,N/A,N/A,"batch1: 2000+200
+batch2: 2000+200","batch1: 2003 
+batch2: 1997","batch1: 3
+batch2: 3","batch1: 2000+200
+batch2: 2000+200","batch1: 2003 
+batch2: 1997","batch1: 3
+batch2: 3",,,,
+Cross integration,SD16,N/A,Simulation,each batch is RNA+ADT,N/A,N/A,N/A,"batch1: 2000+200
+batch2: 2000+200","batch1: 2514
+batch2: 2486","batch1: 5
+batch2: 5","batch1: 2000+200
+batch2: 2000+200","batch1: 2514
+batch2: 2486","batch1: 5
+batch2: 5",,,,
+Cross integration,SD17,N/A,Simulation,each batch is RNA+ATAC,N/A,N/A,N/A,"batch1: 2000+3000 
+batch2: 2000+3000","batch1: 2003 
+batch2: 1997","batch1: 3
+batch2: 3","batch1: 2000+3000 
+batch2: 2000+3000","batch1: 2003 
+batch2: 1997","batch1: 3
+batch2: 3",,,,
+Cross integration,SD18,N/A,Simulation,each batch is RNA+ATAC,N/A,N/A,N/A,"batch1: 2000+5000 
+batch2: 2000+5000","batch1: 2514
+batch2: 2486","batch1: 5
+batch2: 5","batch1: 2000+5000 
+batch2: 2000+5000","batch1: 2514
+batch2: 2486","batch1: 5
+batch2: 5",,,,
+Cross integration,SD19,N/A,Simulation,each batch is ADT+ATAC,N/A,N/A,N/A,"batch1: 200+3000 
+batch2: 200+3000","batch1: 2003 
+batch2: 1997","batch1: 3
+batch2: 3","batch1: 200+3000 
+batch2: 200+3000","batch1: 2003 
+batch2: 1997","batch1: 3
+batch2: 3",,,,
+Cross integration,SD20,N/A,Simulation,each batch is ADT+ATAC,N/A,N/A,N/A,"batch1: 200+5000 
+batch2: 200+5000","batch1: 2514
+batch2: 2486","batch1: 5
+batch2: 5","batch1: 200+5000 
+batch2: 200+5000","batch1: 2514
+batch2: 2486","batch1: 5
+batch2: 5",,,,
+Cross integration,SD21,N/A,Simulation,each batch is RNA+ADT+ATAC,N/A,N/A,N/A,"batch1: 2000+200+3000 
+batch2: 2000+200+3000","batch1: 2003 
+batch2: 1997","batch1: 3
+batch2: 3","batch1: 2000+200+3000 
+batch2: 2000+200+3000","batch1: 2003 
+batch2: 1997","batch1: 3
+batch2: 3",,,,
+Cross integration,SD22,N/A,Simulation,each batch is RNA+ADT+ATAC,N/A,N/A,N/A,"batch1: 2000+200+5000 
+batch2: 2000+200+5000","batch1: 2514
+batch2: 2486","batch1: 5
+batch2: 5","batch1: 2000+200+5000 
+batch2: 2000+200+5000","batch1: 2514
+batch2: 2486","batch1: 5
+batch2: 5",,,,
+Cross integration,D60,16,Visium,each batch is RNA+coordinate,Mouse,Squamous cell carcinoma,"batch1: Patient 2 slice 0
+batch2: Patient 2 slice 1
+batch3: Patient 2 slice 2
+batch4: Patient 5 slice 0
+batch5: Patient 5 slice 1
+batch6: Patient 5 slice 2
+batch7: Patient 9 slice 0
+batch8: Patient 9 slice 1
+batch9: Patient 9 slice 2
+batch10: Patient 10 slice 0
+batch11: Patient 10 slice 1
+batch12: Patient 10 slice 2","batch1: 12453
+batch2: 12675
+batch3: 12830
+batch4: 8946
+batch5: 9759
+batch6: 8287
+batch7: 10319
+batch8: 10176
+batch9: 8399
+batch10: 7659
+batch11: 9949
+batch12: 8359","batch1: 666
+batch2: 645
+batch3: 638
+batch4: 584
+batch5: 517
+batch6: 517
+batch7: 1125
+batch8: 1035
+batch9: 828
+batch10: 545
+batch11: 619
+batch12: 460","batch1: 12
+batch2: 12
+batch3: 12
+batch4: 8
+batch5: 8
+batch6: 8
+batch7: 12
+batch8: 12
+batch9: 12
+batch10: 8
+batch11: 8
+batch12: 7","batch1: 12453
+batch2: 12675
+batch3: 12830
+batch4: 8946
+batch5: 9759
+batch6: 8287
+batch7: 10319
+batch8: 10176
+batch9: 8399
+batch10: 7659
+batch11: 9949
+batch12: 8359","batch1: 666
+batch2: 636
+batch3: 630
+batch4: 578
+batch5: 517
+batch6: 517
+batch7: 1125
+batch8: 1035
+batch9: 819
+batch10: 545
+batch11: 619
+batch12: 460","batch1: 12
+batch2: 11
+batch3: 11
+batch4: 7
+batch5: 8
+batch6: 8
+batch7: 12
+batch8: 12
+batch9: 11
+batch10: 8
+batch11: 8
+batch12: 7",,,,
+Cross integration,D61,17,Visium,each batch is RNA+coordinate,Human,Dorsolateral prefrontal cortex,"batch1:  Donor 1 151507
+batch2:  Donor 1 151508
+batch3:  Donor 1 151509
+batch4:  Donor 1 151510
+batch5:  Donor 2 151669
+batch6:  Donor 2 151670
+batch7:  Donor 2 151671
+batch8:  Donor 2 151672
+batch9:  Donor 3 151673
+batch10: Donor 3 151674
+batch11: Donor 3 151675
+batch12: Donor 3 151676","batch1: 9948
+batch2: 9256
+batch3: 10486
+batch4: 10104
+batch5: 10461
+batch6: 9972
+batch7: 10996
+batch8: 10609
+batch9: 11381
+batch10: 12381
+batch11: 10629
+batch12: 10778","batch1: 4220
+batch2: 4379
+batch3: 4786
+batch4: 4593
+batch5: 3635
+batch6: 3483
+batch7: 4092
+batch8: 3888
+batch9: 3611
+batch10: 3635
+batch11: 3566
+batch12: 3431","batch1: 7
+batch2: 7
+batch3: 7
+batch4: 7
+batch5: 5
+batch6: 5
+batch7: 5
+batch8: 5
+batch9: 7
+batch10: 7
+batch11: 7
+batch12: 7","batch1: 9948
+batch2: 9256
+batch3: 10486
+batch4: 10104
+batch5: 10461
+batch6: 9972
+batch7: 10996
+batch8: 10609
+batch9: 11381
+batch10: 12381
+batch11: 10629
+batch12: 10778","batch1: 4220
+batch2: 4379
+batch3: 4786
+batch4: 4593
+batch5: 3635
+batch6: 3483
+batch7: 4092
+batch8: 3888
+batch9: 3611
+batch10: 3635
+batch11: 3566
+batch12: 3431","batch1: 7
+batch2: 7
+batch3: 7
+batch4: 7
+batch5: 7
+batch6: 5
+batch7: 5
+batch8: 5
+batch9: 7
+batch10: 7
+batch11: 7
+batch12: 7",,,,
+Cross integration,D62,18,Xenium,each batch is RNA+coordinate,Human,Breast cancer tumor,All 2 batches,"batch1: 541
+batch2: 541","batch1: 167780
+batch2: 118752","batch1: 20
+batch2: 20","batch1: 541
+batch2: 541","batch1: 167780
+batch2: 118752","batch1: 20
+batch2: 20",,,,
+Cross integration,D63,19,Stereo-seq,each batch is RNA+coordinate,Drosophila,Embryos,"batch1: S7
+batch2: S8
+batch3: S9
+batch4: S10","batch1: 13668
+batch2: 13668
+batch3: 13668
+batch4: 13668","batch1: 925
+batch2: 1272
+batch3: 1263
+batch4: 1248","batch1: 10
+batch2: 10
+batch3: 10
+batch4: 10","batch1: 6330
+batch2: 7061
+batch3: 7415
+batch4: 7129","batch1: 924
+batch2: 1272
+batch3: 1263
+batch4: 1248","batch1: 9
+batch2: 10
+batch3: 10
+batch4: 10",,,,
+Cross integration,D64,20,MERFISH,each batch is RNA+coordinate,Mouse,Brain,"batch1: Donor 4 slice 0
+batch2: Donor 4 slice 1
+batch3: Donor 4 slice 2
+batch4: Donor 10 slice 0
+batch5: Donor 10 slice 1
+batch6: Donor 10 slice 2
+bacth7: Donor 2 slice 0
+batch8: Donor2 slice 1",each batch is 374,"batch1: 9571
+batch2: 11047
+batch3: 10890
+batch4: 9665
+batch5: 9617
+batch6: 8823
+bacth7: 15694
+batch8: 24790",each batch is 13,"batch1: 374
+batch2: 374
+batch3: 374
+batch4: 373
+batch5: 369
+batch6: 371
+bacth7: 374
+batch8: 374","batch1: 9570
+batch2: 11040
+batch3: 10888
+batch4: 9661
+batch5: 9613
+batch6: 8818
+bacth7: 15694
+batch8: 24790","batch1: 12
+batch2: 11
+batch3: 12
+batch4: 12
+batch5: 11
+batch6: 12
+bacth7: 13
+batch8: 13",,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
