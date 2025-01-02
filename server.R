@@ -217,6 +217,7 @@ server <- function(input, output, session) {
       options = list(
         pageLength = 10,
         scrollX = TRUE,
+        dom = 'lrtip',
         responsive = FALSE,
         autoWidth = TRUE
 
@@ -332,15 +333,37 @@ server <- function(input, output, session) {
             }
           }
           
-          display_cols <- c("dataset.name", "data.source", "protocol", "modality", 
-                          "species", "tissue", "original_feature_num", 
-                          "original_cell_num", "final_feature_num", "final_cell_num")
+          display_cols <- c(
+            "dataset.name", 
+            "data.source", 
+            "protocol", 
+            "modality", 
+            "species", 
+            "tissue", 
+            "original_feature_num", 
+            "original_cell_num",
+            "original_cty_num",    
+            "final_feature_num",
+            "final_cell_num",
+            "final_cty_num"        
+          )
           
           data <- data[, display_cols]
           
-          col_names <- c("Dataset", "Data Source", "Protocol", "Modality", 
-                        "Species", "Tissue", "Original Features", 
-                        "Original Cells", "Final Features", "Final Cells")
+          col_names <- c(
+            "Dataset", 
+            "Data Source", 
+            "Protocol", 
+            "Modality",
+            "Species", 
+            "Tissue", 
+            "Original Features", 
+            "Original Cells",
+            "Original CellTypes",  
+            "Final Features",
+            "Final Cells",
+            "Final Cell Types"     
+          )
           
           colnames(data) <- col_names
           
@@ -539,13 +562,35 @@ server <- function(input, output, session) {
     data$Task.Categories. <- sapply(data$Task.Categories., function(x) {
       items <- safe_split(x, "\n")
       items <- items[items != ""]
-      paste0(items, collapse = "<br/>")
-    })    
+      valid_task_categories <- c("Dimension Reduction", "Batch Correction", "Clustering", "Classification", "Feature Selection", "Imputation", "Spatial Registration")
+      matched_items <- sapply(valid_task_categories, function(category) {
+        if (any(grepl(paste0("^", category, "$"), items, ignore.case = TRUE))) {
+          return(category)
+        }
+        return(NA)
+      })
+      matched_items <- matched_items[!is.na(matched_items)]
+      paste0(matched_items, collapse = "<br/>")
+    })   
+
+
 
     DT::datatable(
         data,
         escape = FALSE,
-        filter = "none",  
+        filter = "none", 
+
+        colnames = c(
+            "Methods" = "Methods",
+            "Data Structure" = "Data.Stucture.",
+            "Peak/Gene Activity" = "Peak.Gene.Activity",
+            "Output" = "Output",
+            "Programming Language" = "Programming.Language",
+            "Deep Learning" = "Deep.Learning",
+            "CellType Information Required" = "CellType.Information.Required",
+            "Integration Categories" = "Integration.Categories",
+            "Task Categories" = "Task.Categories."
+        ), 
         options = list(
         pageLength = 10,
         autoWidth = TRUE,
@@ -564,6 +609,18 @@ server <- function(input, output, session) {
         color = 'blue',
         textDecoration = 'underline',
         cursor = 'pointer'
+        )%>%
+        formatStyle(
+            'Programming Language',
+            textAlign = 'center'
+        ) %>%
+        formatStyle(
+            'Deep Learning',
+            textAlign = 'center'
+        ) %>%
+        formatStyle(
+            'CellType Information Required',
+            textAlign = 'center'
         )
     })
 
@@ -598,7 +655,9 @@ server <- function(input, output, session) {
   metric_data <- reactive({
     print("Reading data file...")
     df <- read.csv("./files/metric_full.csv", stringsAsFactors = FALSE, encoding = "UTF-8")
-    
+
+  df$Label_required <- gsub("Batch information Cell type labels", "Batch information; Cell type labels", df$Label_required)
+
     # 处理链接
     df$Metric <- ifelse(
       !is.na(df$link) & df$link != "",

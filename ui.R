@@ -8,6 +8,10 @@ ui <- dashboardPage(
   title = "MultiBench",
   dashboardHeader(
     title = tags$div(
+      tags$img(
+        src = "plots/logo.png",
+        style = "height:40px; margin-right:20px; margin-top:-5px; display:inline-block; vertical-align:middle;"
+      ),
       tags$span("MultiBench", style = "font-size:20px; font-weight:bold;"),
       style = "display:inline-block; vertical-align:middle;"
     ),
@@ -39,7 +43,7 @@ ui <- dashboardPage(
   ),
   dashboardBody(
     tags$head(
-      tags$head(tags$link(rel = "icon", type = "image/png", href = "plots/logo.png")),
+      tags$link(rel = "icon", type = "image/png", href = "plots/logo.png"),
       tags$link(rel = "stylesheet", type = "text/css", href = "custom.css"),
       tags$script(HTML("
         function toggleSection(header) {
@@ -100,9 +104,6 @@ ui <- dashboardPage(
                        selectInput("modality_filter", "Select Modality:",
                                    choices = c("All"))
                 ),
-                column(6,
-                       textInput("search_text", "Search:", "")
-                )
               ),
               DTOutput("data_source")
             )
@@ -200,7 +201,7 @@ ui <- dashboardPage(
       ),
       tabItem(tabName = "method",
             fluidRow(
-            column(12,
+            column(11,
                 box(
                 title = "Filters", status = "primary", solidHeader = TRUE,
                 width = 12,
@@ -228,7 +229,7 @@ ui <- dashboardPage(
             )
             ),
             fluidRow(
-            column(12,
+            column(11,
                 box(
                 title = "Methods Table", status = "primary", solidHeader = TRUE,
                 width = 12,
