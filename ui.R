@@ -34,9 +34,7 @@ ui <- dashboardPage(
               menuSubItem("Summary Performance", tabName = "summary"),
               menuSubItem("Dataset-Specific Performance", tabName = "scib"),  
               menuSubItem("Time&Memory", tabName = "timememory")
-      ),
-      menuItem("Submit & Compare", tabName = "compare",
-               menuSubItem("Dataset-specific Performance", tabName = "dataset_compare"))
+      )
     )
   ),
   dashboardBody(
