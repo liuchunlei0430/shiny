@@ -41,6 +41,7 @@ ui <- dashboardPage(
   ),
   dashboardBody(
     tags$head(
+      tags$head(tags$link(rel = "icon", type = "image/png", href = "plots/logo.png")),
       tags$link(rel = "stylesheet", type = "text/css", href = "custom.css"),
       tags$script(HTML("
         function toggleSection(header) {
